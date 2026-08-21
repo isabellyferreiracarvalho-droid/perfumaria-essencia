@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário de Contato</title>
+  <link rel="stylesheet" href="Contato.css" />
+</head>
+<body>
+
+  <div class="form-container">
+    <h1 class="form-title">Formulário de Contato</h1>
+
+     <nav class="acoes" aria-label="Menu principal">
+      <a href="index.html" class="menu-link">Início</a>
+    </nav>
+
+    <form id="contactForm">
+      
+      <div class="form-card active-card">
+        <div class="card-header">
+          <div class="drag-dots">⋮⋮</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+
+        <label class="field-title">Nome completo</label>
+        <p class="field-desc">Descrição</p>
+
+        <div class="row-2-col">
+          <input type="text" name="firstName" placeholder="Primeiro nome" />
+          <input type="text" name="lastName" placeholder="Último nome" />
+        </div>
+      </div>
+
+      <div class="form-card">
+        <label class="field-title">Email*</label>
+        <p class="field-desc">Descrição</p>
+        <div class="input-icon-wrapper">
+          <i class="fa-regular fa-envelope input-icon"></i>
+          <input type="email" name="email" required />
+        </div>
+      </div>
+
+      <div class="form-card">
+        <label class="field-title">Endereço</label>
+        <p class="field-desc">Descrição</p>
+        
+        <div class="input-icon-wrapper">
+          <i class="fa-solid fa-location-dot input-icon"></i>
+          <input type="text" name="address" placeholder="Endereço" />
+        </div>
+
+        <div class="row-3-col">
+          <input type="text" name="city" placeholder="Cidade" />
+          <input type="text" name="state" placeholder="Estado" />
+          <div class="select-wrapper">
+            <select name="country">
+              <option value="" disabled selected hidden>País</option>
+              <option value="BR">Brasil</option>
+              <option value="PT">Portugal</option>
+              <option value="US">Estados Unidos</option>
+            </select>
+            <i class="fa-solid fa-chevron-down select-icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <label class="field-title">Número de contato*</label>
+        <p class="field-desc">Descrição</p>
+        <div class="input-icon-wrapper">
+          <i class="fa-solid fa-phone input-icon"></i>
+          <input type="tel" name="phone" required />
+        </div>
+      </div>
+
+      <div class="form-card">
+        <label class="field-title">Notas, sugestões ou perguntas*</label>
+        <p class="field-desc">Descrição</p>
+        <div class="input-icon-wrapper textarea-wrapper">
+          <i class="fa-solid fa-align-left input-icon"></i>
+          <textarea name="notes" rows="4" required></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">Enviar</button>
+
+    </form>
+  </div>
+  <script src="contato.js"></script>
+
+  
+</body>
+</html>
